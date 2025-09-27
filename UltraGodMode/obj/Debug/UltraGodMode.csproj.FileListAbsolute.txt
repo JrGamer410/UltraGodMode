@@ -1,0 +1,9 @@
+C:\Users\srjam\source\repos\UltraGodMode\UltraGodMode\bin\Debug\UltraGodMode.exe
+C:\Users\srjam\source\repos\UltraGodMode\UltraGodMode\bin\Debug\UltraGodMode.pdb
+C:\Users\srjam\source\repos\UltraGodMode\UltraGodMode\obj\Debug\UltraGodMode.csproj.AssemblyReference.cache
+C:\Users\srjam\source\repos\UltraGodMode\UltraGodMode\obj\Debug\UltraGodMode.Form1.resources
+C:\Users\srjam\source\repos\UltraGodMode\UltraGodMode\obj\Debug\UltraGodMode.Properties.Resources.resources
+C:\Users\srjam\source\repos\UltraGodMode\UltraGodMode\obj\Debug\UltraGodMode.csproj.GenerateResource.cache
+C:\Users\srjam\source\repos\UltraGodMode\UltraGodMode\obj\Debug\UltraGodMode.csproj.CoreCompileInputs.cache
+C:\Users\srjam\source\repos\UltraGodMode\UltraGodMode\obj\Debug\UltraGodMode.exe
+C:\Users\srjam\source\repos\UltraGodMode\UltraGodMode\obj\Debug\UltraGodMode.pdb
