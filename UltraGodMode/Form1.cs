@@ -20,11 +20,22 @@ namespace UltraGodMode
         {
             
         }
+        private void MainForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (godModeItems.SelectedItems.Count > 0)
+                {
+                    e.Handled = true;
+                    launchButton.PerformClick();
+                }
+            }
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            godModeItems.Columns.Add("Name", 250); // first column, width = 150px
-            godModeItems.Columns.Add("Path", 500); // second column, width = 300px
+            godModeItems.Columns.Add("Name", 255);
+            godModeItems.Columns.Add("Path", 500);
 
             // Here we add items to the ListView using a function to cut down on redundancy.
             AddItemToListView("Task Manager", "taskmgr.exe");
@@ -32,6 +43,7 @@ namespace UltraGodMode
             AddItemToListView("Control Panel", "control.exe");
             AddItemToListView("System Restore", "rstrui.exe");
             AddItemToListView("Registry Editor", "regedit.exe");
+            AddItemToListView("Command Prompt", "cmd.exe");
             AddItemToListView("Windows Security", "windowsdefender://");
             AddItemToListView("Windows Security Network Settings", "windowsdefender://network");
             AddItemToListView("Windows Security Protection History", "windowsdefender://history");  
@@ -62,6 +74,33 @@ namespace UltraGodMode
             AddItemToListView("User Account Control Settings", "UserAccountControlSettings.exe");
             AddItemToListView("Add New User", "ms-cxh://setaddnewuser");
             AddItemToListView("Event Viewer", "eventvwr.exe");
+            AddItemToListView("Authorization Manager", "azman.msc");
+            AddItemToListView("Certificates", "certlm.msc");
+            AddItemToListView("Component Services", "comexp.msc");
+            AddItemToListView("DevModeRunAsUserConfig", "DevModeRunAsUserConfig.msc");
+            AddItemToListView("Disk Management", "diskmgmt.msc");
+            AddItemToListView("Shared Folders", "fsmgmt.msc");
+            AddItemToListView("Performance Monitor", "perfmon.msc");
+            AddItemToListView("Print Management", "printmanagement.msc");
+            AddItemToListView("Resultant Set of Policy", "rsop.msc");
+            AddItemToListView("Local Security Policy", "secpol.msc");
+            AddItemToListView("Task Scheduler", "taskschd.msc");
+            AddItemToListView("TPM Management", "tpm.msc");
+            AddItemToListView("Windows Defender Firewall with Advanced Security", "wf.msc");
+            AddItemToListView("Windows Management Instrumentation", "wmimgmt.msc");
+            AddItemToListView("System Properties - Advanced", "SystemPropertiesAdvanced.exe");
+            AddItemToListView("System Properties - Computer Name", "SystemPropertiesComputerName.exe");
+            AddItemToListView("System Properties - Hardware", "SystemPropertiesHardware.exe");
+            AddItemToListView("System Properties - Performance", "SystemPropertiesPerformance.exe");
+            AddItemToListView("System Properties - Protection", "SystemPropertiesProtection.exe");
+            AddItemToListView("System Properties - Remote", "SystemPropertiesRemote.exe");
+            AddItemToListView("Digitizer Calibration Tool", "tabcal.exe");
+            AddItemToListView("Optional Windows Features", "optionalfeatures.exe");
+            AddItemToListView("DirectX Diagnostic Tool", "dxdiag.exe");
+
+            // The below code allows the ENTER code to function.
+            this.KeyPreview = true;
+            this.KeyDown += MainForm_KeyDown;
         }
 
         private void launchButton_Click(object sender, EventArgs e)
