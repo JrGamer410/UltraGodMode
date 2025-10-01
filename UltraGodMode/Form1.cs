@@ -34,8 +34,8 @@ namespace UltraGodMode
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            godModeItems.Columns.Add("Name", 255);
-            godModeItems.Columns.Add("Path", 500);
+            godModeItems.Columns.Add("Name", 300);
+            godModeItems.Columns.Add("Path", 450);
 
             // Here we add items to the ListView using a function to cut down on redundancy.
             AddItemToListView("Task Manager", "taskmgr.exe");
@@ -46,7 +46,8 @@ namespace UltraGodMode
             AddItemToListView("Command Prompt", "cmd.exe");
             AddItemToListView("Windows Security", "windowsdefender://");
             AddItemToListView("Windows Security Network Settings", "windowsdefender://network");
-            AddItemToListView("Windows Security Protection History", "windowsdefender://history");  
+            AddItemToListView("Windows Security Protection History", "windowsdefender://history");
+            AddItemToListView("Settings", "ms-settings:");
             AddItemToListView("Sound Settings", "ms-settings:sound");
             AddItemToListView("Account Settings", "ms-settings:accounts");
             AddItemToListView("Volume Mixer Settings", "ms-settings:apps-volume");
@@ -97,6 +98,125 @@ namespace UltraGodMode
             AddItemToListView("Digitizer Calibration Tool", "tabcal.exe");
             AddItemToListView("Optional Windows Features", "optionalfeatures.exe");
             AddItemToListView("DirectX Diagnostic Tool", "dxdiag.exe");
+            AddItemToListView("Available Networks", "ms-availablenetworks:");
+            AddItemToListView("Device Discovery/Cast Settings", "ms-settings-connectabledevices:devicediscovery");
+            AddItemToListView("Workplace Settings", "ms-settings:workplace");
+            AddItemToListView("Email and Accounts Settings", "ms-settings:emailandaccounts");
+            AddItemToListView("Other Users", "ms-settings:otherusers");
+            AddItemToListView("Family Settings", "ms-settings:family-group");
+            AddItemToListView("Set Up A Kiosk", "ms-settings:assignedaccess");
+            AddItemToListView("Sign-in Options", "ms-settings:signinoptions");
+            AddItemToListView("Windows Hello Setup (Face Unlock)", "ms-settings:signinoptions-launchfaceenrollment");
+            AddItemToListView("Windows Hello Setup (Fingerprint Unlock)", "ms-settings:signinoptions-launchfingerprintenrollment");
+            AddItemToListView("Your Info", "ms-settings:yourinfo");
+            AddItemToListView("Apps and Features (Settings)", "ms-settings:appsfeature");
+            AddItemToListView("App Features", "ms-settings:appsfeatures-app");
+            AddItemToListView("Apps for Websites", "ms-settings:appsforwebsites");
+            AddItemToListView("Default App Settings", "ms-settings:defaultapps");
+            AddItemToListView("Optional Features (Settings)", "ms-settings:optionalfeatures");
+            AddItemToListView("Offline Maps", "ms-settings:maps");
+            AddItemToListView("Download Offline Maps", "ms-settings:maps-downloadmaps");
+            AddItemToListView("Startup Apps", "ms-settings:startupapps");
+            AddItemToListView("Video Playback", "ms-settings:videoplayback");
+            AddItemToListView("AutoPlay Settings", "ms-settings:autoplay");
+            AddItemToListView("Connected Devices Settings", "ms-settings:connecteddevices");
+            AddItemToListView("Camera Settings", "ms-settings:camera");
+            AddItemToListView("Mouse and Touchpad Settings", "ms-settings:mousetouchpad");
+            AddItemToListView("Pen and Windows Ink Settings", "ms-settings:pen");
+            AddItemToListView("Printers and Scanners Settings", "ms-settings:printers");
+            AddItemToListView("Touch Settings", "ms-settings:devices-touch");
+            AddItemToListView("Touchpad Settings", "ms-settings:devices-touchpad");
+            AddItemToListView("Text Suggestions Settings", "ms-settings:devicestyping-hwkbtextsuggestions");
+            AddItemToListView("Typing Settings", "ms-settings:typing");
+            AddItemToListView("USB Settings", "ms-settings:usb");
+            AddItemToListView("Audio Accessibility Settings", "ms-settings:easeofaccess-audio");
+            AddItemToListView("Closed Captions Settings", "ms-settings:easeofaccess-closedcaptioning");
+            AddItemToListView("Color Filter Settings", "ms-settings:easeofaccess-colorfilter");
+            AddItemToListView("Display Settings", "ms-settings:easeofaccess-colorfilter-adaptivecolorlink");
+            AddItemToListView("Night Light Settings", "ms-settings:easeofaccess-colorfilter-bluelightlink");
+            AddItemToListView("Eye Control Settings", "ms-settings:easeofaccess-eyecontrol");
+            AddItemToListView("Fonts Settings", "ms-settings:fonts");
+            AddItemToListView("High Contrast Settings", "ms-settings:easeofaccess-highcontrast");
+            AddItemToListView("Keyboard Settings", "ms-settings:easeofaccess-keyboard");
+            AddItemToListView("Mouse Settings", "ms-settings:easeofaccess-mouse");
+            AddItemToListView("Magnifier Settings", "ms-settings:easeofaccess-magnifier");
+            AddItemToListView("Mouse Pointer and Touch Settings", "ms-settings:easeofaccess-mousepointer");
+            AddItemToListView("Narrator Settings", "ms-settings:easeofaccess-narrator");
+            AddItemToListView("Speech Recognition Settings", "ms-settings:easeofaccess-speechrecognition");
+            AddItemToListView("Text Cursor Settings", "ms-settings:easeofaccess-cursor");
+            AddItemToListView("Visual Effects Accessibility Settings", "ms-settings:easeofaccess-visualeffects");
+            AddItemToListView("Game Bar Settings", "ms-settings:gaming-gamebar");
+            AddItemToListView("Game DVR Settings", "ms-settings:gaming-gamedvr");
+            AddItemToListView("Game Mode Settings", "ms-settings:gaming-gamemode");
+            AddItemToListView("Default Browser Setttings", "ms-settings:defaultbrowsersettings");
+            AddItemToListView("Advanced Network Settings", "ms-settings:network-advancedsettings");
+            AddItemToListView("Airplane Mode Settings", "ms-settings:network-airplanemode");
+            AddItemToListView("Dial-Up Settings", "ms-settings:network-dialup");
+            AddItemToListView("Ethernet Settings", "ms-settings:network-ethernet");
+            AddItemToListView("Known Network Settings", "ms-settings:network-wifisettings");
+            AddItemToListView("Mobile Hotspot Settings", "ms-settings:network-mobilehotspot");
+            AddItemToListView("Proxy Settings", "ms-settings:network-proxy");
+            AddItemToListView("VPN Settings", "ms-settings:network-vpn");
+            AddItemToListView("Wi-Fi Settings", "ms-settings:network-wifi");
+            AddItemToListView("Background Settings", "ms-settings:personalization-background");
+            AddItemToListView("Colors Settings", "ms-settings:personalization-colors");
+            AddItemToListView("Lock Screen Settings", "ms-settings:lockscreen");
+            AddItemToListView("Start Folder Settings", "ms-settings:personalization-start-places");
+            AddItemToListView("Themes Settings", "ms-settings:themes");
+            AddItemToListView("Taskbar Settings", "ms-settings:taskbar");
+            AddItemToListView("Device Usage Settings", "ms-settings:deviceusage");
+            AddItemToListView("Privacy and Security", "ms-settings:privacy");
+            AddItemToListView("Privacy and Security - Account Info", "ms-settings:privacy-accountinfo");
+            AddItemToListView("Privacy and Security - App Diagnostics", "ms-settings:privacy-appdiagnostics");
+            AddItemToListView("Privacy and Security - Automatic File Downloads", "ms-settings:privacy-automaticfiledownloads");
+            AddItemToListView("Privacy and Security - Calendar", "ms-settings:privacy-calendar");
+            AddItemToListView("Privacy and Security - Call History", "ms-settings:callhistory");
+            AddItemToListView("Privacy and Security - Camera", "ms-settings:privacy-webcam");
+            AddItemToListView("Privacy and Security - Contacts", "ms-settings:privacy-contacts");
+            AddItemToListView("Privacy and Security - Diagnostics and Feedback", "ms-settings:privacy-feedback");
+            AddItemToListView("Privacy and Security - Documents", "ms-settings:privacy-documents");
+            AddItemToListView("Privacy and Security - Downloads Folder", "ms-settings:privacy-downloadsfolder");
+            AddItemToListView("Privacy and Security - Email", "ms-settings:privacy-email");
+            AddItemToListView("Privacy and Security - File System", "ms-settings:privacy-broadfilesystemaccess");
+            AddItemToListView("Privacy and Security - Screenshots and Screen Recording", "ms-settings:privacy-graphicscaptureprogrammatic");
+            AddItemToListView("Privacy and Security - Screenshot Borders", "ms-settings:privacy-graphicscapturewithoutborder");
+            AddItemToListView("Privacy and Security - Inking and Typing Personalization", "ms-settings:privacy-speechtyping");
+            AddItemToListView("Privacy and Security - Location", "ms-settings:privacy-location");
+            AddItemToListView("Privacy and Security - Messaging", "ms-settings:privacy-messaging");
+            AddItemToListView("Privacy and Security - Microphone", "ms-settings:privacy-microphone");
+            AddItemToListView("Privacy and Security - Music Library", "ms-settings:privacy-musiclibrary");
+            AddItemToListView("Privacy and Security - Notifications", "ms-settings:privacy-notifications");
+            AddItemToListView("Privacy and Security - Other Devices", "ms-settings:privacy-customdevices");
+            AddItemToListView("Privacy and Security - Pictures", "ms-settings:privacy-pictures");
+            AddItemToListView("Privacy and Security - Radios", "ms-settings:pr vcfds1ivacy-radios");
+            AddItemToListView("Privacy and Security - Speech", "ms-settings:privacy-speech");
+            AddItemToListView("Privacy and Security - Tasks", "ms-settings:privacy-tasks");
+            AddItemToListView("Privacy and Security - Videos", "ms-settings:privacy-videos");
+            AddItemToListView("Privacy and Security - Voice Activation", "ms-settings:privacy-voiceactivation");
+            AddItemToListView("Privacy and Security - Search", "ms-settings:search");
+            AddItemToListView("About Device", "ms-settings:about");
+            AddItemToListView("Clipboard Settings", "ms-settings:clipboard");
+            AddItemToListView("Default Save Locations", "ms-settings:savelocations");
+            AddItemToListView("Focus Settings", "ms-settings:quiethours");
+            AddItemToListView("Application Graphics Settings", "ms-settings:display-advancedgraphics");
+            AddItemToListView("Multitasking Settings", "ms-settings:multitasking");
+            AddItemToListView("Night Light Settings", "ms-settings:nightlight");
+            AddItemToListView("Projecting to this PC Settings", "ms-settings:project");
+            AddItemToListView("Nearby Sharing Settings", "ms-settings:crossdevice");
+            AddItemToListView("Remote Desktop Settings", "ms-settings:remotedesktop");
+            AddItemToListView("Sound Device Settings", "ms-settings:sound-devices");
+            AddItemToListView("Storage Settings", "ms-settings:storagesense");
+            AddItemToListView("Storage Policies", "ms-settings:storagepolicies");
+            AddItemToListView("Disks and Volumes", "ms-settings:disksandvolumes");
+            AddItemToListView("Japan IME Settings", "ms-settings:japan-ime");
+            AddItemToListView("Language and Region Settings", "ms-settings:regionformatting");
+
+            // Now we add some third-party options if we detect that those programs are installed.
+            if (System.IO.Directory.Exists(@"C:\Program Files (x86)\Steam")) // To-Do: Add a non-directory specific way of detecting Steam.
+            {
+                AddItemToListView("Steam Client Developer Console", "steam://nav/console");
+                AddItemToListView("Steam Client Settings", "steam://settings");
+            }
 
             // The below code allows the ENTER code to function.
             this.KeyPreview = true;

@@ -31,6 +31,7 @@
             this.godModeItems = new System.Windows.Forms.ListView();
             this.launchButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // godModeItems
@@ -65,11 +66,21 @@
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(331, 428);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Version 2.0.0.0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 458);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.launchButton);
             this.Controls.Add(this.godModeItems);
@@ -80,6 +91,7 @@
             this.Text = "UltraGodMode by Sean-e/JrGamer410";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -88,6 +100,7 @@
         private System.Windows.Forms.ListView godModeItems;
         private System.Windows.Forms.Button launchButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Label label1;
     }
 }
 
