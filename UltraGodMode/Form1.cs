@@ -250,7 +250,7 @@ namespace UltraGodMode
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Failed to open \"{selectedItem}\": {ex.Message}");
+                MessageBox.Show($"Failed to open \"{selectedItem}\": {ex.Message}","Error!", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
         private void AddItemToListView(string name, string path)
